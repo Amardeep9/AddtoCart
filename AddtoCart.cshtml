@@ -1,0 +1,14 @@
+﻿@model ShoppingCart.Models.ProductModel
+
+@{
+    ViewBag.Title = "AddtoCart";
+}
+
+<h2>AddtoCart</h2>
+
+@*<input type="button" value="Add to Cart" onclick="location.href='@Url.Action("AddtoCart", "Product")'" />*@
+
+
+
+@Html.ActionLink("AddtoCart", "AddtoCart",
+    "Product", new {id = Model.ProductId}, null)
